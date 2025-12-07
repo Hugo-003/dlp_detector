@@ -20,15 +20,14 @@ git clone https://github.com/Hugo-003/dlp_detector.git
 cd dlp_detector
 
 2. Ejecuta el script:
-python dlp_detectorV5.py
+python dlp_detector.py
 
-3. Introduce la ruta del archivo o carpeta a analizar (ejemplo Windows):
-C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test.txt
+3. Introduce la ruta del archivo o carpeta a analizar
 
 4. Todos los archivos enmascarados se generarán en la carpeta `masked_files`. Los logs se guardan en `dlp_logs.txt`.
 
 ## Archivos incluidos
-- dlp_detectorV5.py : Script principal del DLP
+- dlp_detector.py : Script principal del DLP
 - Archivos de ejemplo para testeo (opcional)
 - README.md : Documentación y guía de uso
 

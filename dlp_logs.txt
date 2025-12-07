@@ -13,3 +13,37 @@
 [2025-12-07 20:07:09] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_test2.txt
 [2025-12-07 20:07:09] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.docx
 [2025-12-07 20:07:09] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.pdf
+[2025-12-07 20:21:44] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test1.txt | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:21:44] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test2.docx | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:21:44] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test3.pdf | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 10
+[2025-12-07 20:21:44] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test1.txt
+[2025-12-07 20:21:44] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test2.docx
+[2025-12-07 20:21:44] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test3.pdf
+[2025-12-07 20:21:44] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_test1.txt
+[2025-12-07 20:21:44] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_test2.txt
+[2025-12-07 20:21:44] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.docx
+[2025-12-07 20:21:44] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.pdf
+[2025-12-07 20:36:35] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test1.txt | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:36:35] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test2.docx | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:36:35] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test3.pdf | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 10
+[2025-12-07 20:36:35] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test1.txt
+[2025-12-07 20:36:35] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test2.docx
+[2025-12-07 20:36:35] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test3.pdf
+[2025-12-07 20:36:42] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test1.txt | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:36:42] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test2.docx | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:36:42] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test3.pdf | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 10
+[2025-12-07 20:36:42] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test1.txt
+[2025-12-07 20:36:42] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test2.docx
+[2025-12-07 20:36:42] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test3.pdf
+[2025-12-07 20:36:56] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test1.txt | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:36:56] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test2.docx | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:36:56] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test3.pdf | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 10
+[2025-12-07 20:36:56] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test1.txt
+[2025-12-07 20:36:56] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test2.docx
+[2025-12-07 20:36:56] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test3.pdf
+[2025-12-07 20:37:15] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test1.txt | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:37:15] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test2.docx | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:37:15] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_doc_test3.pdf | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 10
+[2025-12-07 20:37:15] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test1.txt
+[2025-12-07 20:37:15] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test2.docx
+[2025-12-07 20:37:15] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_doc_test3.pdf

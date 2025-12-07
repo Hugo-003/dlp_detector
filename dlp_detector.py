@@ -12,9 +12,10 @@ from reportlab.lib.pagesizes import letter
 # CONFIGURACIÓN
 # =========================
 
-MASKED_DIR = "masked_files"  # Carpeta donde se guardan los archivos enmascarados
-LOG_FILE = "dlp_logs.txt"
+MASKED_DIR = "masked_files"  # Carpeta donde vamos a meter todos los archivos enmascarados, para no liarnos con los originales
+LOG_FILE = "dlp_logs.txt"    # Archivo donde vamos a ir guardando todos los logs de lo que detectamos
 
+# Patrones de datos sensibles que queremos detectar
 PATTERNS = {
     "DNI": r"\b\d{8}[A-HJ-NP-TV-Z]\b",
     "EMAIL": r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b",
@@ -23,6 +24,7 @@ PATTERNS = {
     "TARJETA": r"\b(?:\d[ -]*?){13,16}\b"
 }
 
+# Severidad asociada a cada tipo de dato, para saber cuáles son más críticos
 SEVERITY = {
     "DNI": "ALTO",
     "EMAIL": "MEDIO",
@@ -36,16 +38,19 @@ SEVERITY = {
 # =========================
 
 def ensure_masked_dir(base_path):
+    # Crear carpeta para archivos enmascarados si no existe
     masked_path = os.path.join(base_path, MASKED_DIR)
     os.makedirs(masked_path, exist_ok=True)
     return masked_path
 
 def log_event(event):
+    # Guardamos los eventos en un log, para poder auditar después si hace falta
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"[{timestamp}] {event}\n")
 
 def mask_data(data, label):
+    # Reemplazamos los datos sensibles por algo más seguro, sin perder la referencia mínima
     if label in ["DNI", "TARJETA", "IBAN"]:
         return "*" * (len(data) - 2) + data[-2:]
     elif label == "EMAIL":
@@ -56,6 +61,7 @@ def mask_data(data, label):
     return data
 
 def read_file(file_path):
+    # Intentamos leer el archivo según su tipo, siempre controlando errores para que no crashee
     if file_path.lower().endswith(('.txt', '.csv', '.log')):
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             return f.read()
@@ -66,6 +72,7 @@ def read_file(file_path):
             for page in reader.pages:
                 text += page.extract_text() + "\n"
         except:
+            # Si falla al leer el PDF, no paramos el programa
             pass
         return text
     elif file_path.lower().endswith('.docx'):
@@ -75,11 +82,13 @@ def read_file(file_path):
             for para in doc.paragraphs:
                 text += para.text + "\n"
         except:
+            # Lo mismo con Word, seguimos aunque haya algún fallo
             pass
         return text
     return ""
 
 def save_masked(content, original_path, masked_dir):
+    # Guardamos la versión enmascarada, manteniendo el tipo de archivo
     base, ext = os.path.splitext(os.path.basename(original_path))
     if ext.lower() in ['.txt', '.csv', '.log']:
         masked_file = os.path.join(masked_dir, f"masked_{base}{ext}")
@@ -118,6 +127,7 @@ def scan_file(file_path, masked_dir):
     severity_counter = {}
 
     for label, pattern in PATTERNS.items():
+        # Buscamos coincidencias y vamos contando
         matches = re.findall(pattern, content)
         if matches:
             findings[label] = matches
@@ -127,13 +137,13 @@ def scan_file(file_path, masked_dir):
                 masked_content = masked_content.replace(match, masked)
                 total_incidents += 1
 
-    # Guardar versión enmascarada en la carpeta dedicada
+    # Guardamos el archivo enmascarado en la carpeta dedicada
     if findings:
         masked_file = save_masked(masked_content, file_path, masked_dir)
     else:
         masked_file = None
 
-    # Logging
+    # Registramos en el log
     if findings:
         log_event(f"ALERTA: {file_path} | Tipos: {list(findings.keys())} | Incidentes: {total_incidents}")
     else:
@@ -148,7 +158,7 @@ def scan_file(file_path, masked_dir):
 
 def scan_folder(folder_path):
     if not os.path.exists(folder_path):
-        print("❌ Carpeta no encontrada")
+        print("Carpeta no encontrada")
         return
 
     masked_dir = ensure_masked_dir(folder_path)
@@ -162,7 +172,7 @@ def scan_folder(folder_path):
                 results["file"] = path
                 all_results.append(results)
 
-    # Resumen global
+    # Resumen global para el usuario
     total_files = len(all_results)
     files_with_incidents = sum(1 for r in all_results if r["total"] > 0)
     total_incidents = sum(r["total"] for r in all_results)
@@ -180,6 +190,7 @@ def scan_folder(folder_path):
 if __name__ == "__main__":
     print("\n=== SISTEMA DLP AVANZADO (Archivos en carpeta masked_files) ===\n")
     raw_path = input("Introduce la ruta del archivo o carpeta a analizar: ").strip()
+    # Limpiamos comillas o caracteres extraños que pueda meter el usuario
     raw_path = raw_path.strip('"').strip("'")
     path = os.path.normpath(raw_path)
 
