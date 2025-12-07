@@ -1,0 +1,15 @@
+[2025-12-07 20:04:38] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_test1.txt | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:04:38] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_test2.txt | Tipos: ['DNI', 'TELEFONO'] | Incidentes: 2
+[2025-12-07 20:04:38] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dpl_test3.docx | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:04:38] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dpl_test3.pdf | Tipos: ['TELEFONO', 'TARJETA'] | Incidentes: 4
+[2025-12-07 20:04:38] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_test1.txt
+[2025-12-07 20:04:38] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_test2.txt
+[2025-12-07 20:04:38] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.docx
+[2025-12-07 20:04:38] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.pdf
+[2025-12-07 20:07:09] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dlp_test1.txt | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:07:09] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dpl_test3.docx | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 12
+[2025-12-07 20:07:09] ALERTA: C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\dpl_test3.pdf | Tipos: ['DNI', 'EMAIL', 'TARJETA'] | Incidentes: 10
+[2025-12-07 20:07:09] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_test1.txt
+[2025-12-07 20:07:09] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dlp_test2.txt
+[2025-12-07 20:07:09] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.docx
+[2025-12-07 20:07:09] OK: Archivo limpio -> C:\Users\Hugo\Desktop\Universidad\Seguridad de datos\Trabajo final\dlp_test_carpeta\masked_files\masked_dpl_test3.pdf
