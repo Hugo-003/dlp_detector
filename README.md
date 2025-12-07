@@ -36,6 +36,13 @@ python dlp_detector.py
 - Resumen global de incidencias en consola.
 - Enmascarado manteniendo el tipo original del archivo (TXT, PDF, DOCX).
 
+## Buenas prácticas aplicadas
+
+- Manejo de errores al leer archivos PDF y Word para que el programa no crashee.
+- Enmascarado seguro de datos sensibles manteniendo referencia mínima.
+- Logs con timestamps para auditoría.
+- Estructura de proyecto clara y modular para facilitar futuras mejoras.
+
 ## Notas para la demo
 - Se recomienda tener algunos archivos de ejemplo con datos sensibles para mostrar el funcionamiento.
 - Los archivos enmascarados se encuentran en `masked_files`, mostrando que los datos críticos han sido ocultados.
